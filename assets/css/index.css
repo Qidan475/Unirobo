@@ -1,0 +1,344 @@
+.absolute-center {
+    display: flex;
+}
+
+.absolute-center-center {
+    margin: auto;
+}
+
+.landing-picture {
+    overflow: hidden;
+    height: 100vh;
+    background: url("../images/fon.png") no-repeat fixed 80%;
+    background-size: cover;
+}
+
+.tagline {
+    color: white;
+    font-family: HarmoniaSans;
+    font-weight: bolder;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.nice-button {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.nice-button a {
+    padding: 12px 35px;
+    color: black;
+    font-size: 16pt;
+    background-color: #F9D71C;
+    font-weight: lighter;
+    border: 0;
+}
+
+.contacts {
+    display: grid;
+    grid-template-areas: "A A A"
+                         "B Z C";
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    margin-bottom: 100px;
+}
+
+.contacts div {
+    color: black;
+}
+
+.company {
+    grid-area: A;
+}
+
+.about {
+    background-color: white;
+}
+
+.about .title {
+    border-bottom: 1px solid #ddd;
+}
+
+.phone-number {
+    grid-area: B;
+    margin: auto;
+    text-align: right;
+}
+
+.address {
+    grid-area: C;
+    margin: auto;
+}
+
+.contacts div p + p {
+    font-size: 16pt;
+    color: black;
+    font-weight: lighter;
+}
+
+.company-description {
+    margin-top: 25px;
+    font-size: 14pt;
+}
+
+.company-description-image {
+    float: right;
+    margin-top: 10px;
+    border-radius: 2px;
+    max-width: 100%;
+    height: 150px;
+}
+
+.companies-images {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.companies-images-item {
+    max-width: 100%;
+    max-height: 200px;
+    width: 250px;
+}
+
+.companies-slider {
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.companies-slider a {
+    display: inline-block;
+    border-radius: 50%;
+    background: white;
+    width: 12px;
+    height: 12px;
+    padding: 3px;
+    margin: 3px;
+    border: 1px solid lightgray;
+}
+
+.new-thingos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "A B";
+    grid-gap: 15px;
+}
+
+.new-thingos div {
+    border-radius: 5px;
+}
+
+.thing-a {
+    grid-area: A;
+}
+
+.thing-b {
+    grid-area: B;
+    display: grid;
+    grid-template-areas: "A"
+                         "B";
+    grid-gap: 15px;
+}
+
+.image-thingo {
+    background: no-repeat center;
+    background-size: cover;
+    box-shadow: 0 0 10px 5px #ccc;
+}
+
+.image-thingo:hover {
+    box-shadow: 0 0 10px 5px #999;
+    transition: 0.25s;
+}
+
+.aaa {
+    background-image: url("../images/robot_pylesos_xiaomi_mi_robot_vacuum_mop_2_lite_2053688_15.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+.bbb {
+    background-image: url("../images/q93_e86da88d345f1cb45bcf70e29b55355f66c029428a268000574fa1fb4d0d91e1.jpg");
+    width: 100%;
+    height: 60vw;
+    max-height: 400px;
+}
+
+.ccc {
+    background-image: url("../images/top-5-robotov-pylesosov-s-lidarom-3.jpg");
+    width: 100%;
+    height: 60vw;
+    max-height: 400px;
+}
+
+#new-thingos {
+    overflow: hidden;
+}
+
+.technologies-list {
+    display: grid;
+    grid-template-areas: "A"
+                         "B"
+                         "C";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.technology-item {
+    display: grid;
+    grid-template-areas: "A B";
+    grid-template-columns: 1fr 1fr;
+}
+
+.technology-title {
+    font-size: 22pt;
+    font-weight: bold;
+    color: #2ECC71;
+}
+
+.technology-description {
+    font-size: 14pt;
+    padding-top: 10px;
+}
+
+.technology-img-container {
+    height: 300px;
+    max-height: 100%;
+    width: 100%;
+    background: no-repeat center;
+    background-size: cover;
+}
+
+.technology-grid-a {
+    grid-area: A;
+}
+
+.technology-grid-b {
+    grid-area: B;
+}
+
+.technology-item:nth-child(2) .technology-grid-b {
+    grid-area: A;
+}
+
+.technology-item:nth-child(2) .technology-grid-a {
+    grid-area: B;
+}
+
+.technology-card-description {
+    display: flex;
+    margin: auto 20px;
+}
+
+.technology-item-img-1 {
+    background-image: url("../images/advantages/40debddb5719404c81d5f6a03a31751f_00000.jpg");
+}
+
+.technology-item-img-2 {
+    background-image: url("../images/advantages/A4fb4o8k_400x400.jpg");
+}
+
+.technology-item-img-3 {
+    background-image: url("../images/advantages/Arikawa_Hime_Holding_C_Programming_Language.png");
+    background-position: 0 40%;
+}
+
+#licenses {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.licenses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.licenses-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5vw;
+}
+
+.licenses-items div {
+    width: 100px;
+    height: 150px;
+}
+
+.licenses-item-1 {
+    background: url("../images/licenses/1.jpg") no-repeat center;
+}
+
+.licenses-item-2 {
+    background: url("../images/licenses/2.jpg") no-repeat center;
+}
+
+.licenses-item-3 {
+    background: url("../images/licenses/3.jpg") no-repeat center;
+}
+
+.licenses-item-4 {
+    background: url("../images/licenses/4.jpg") no-repeat center;
+}
+
+@media (max-width: 900px) {
+    #cookies-popup {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .new-thingos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "A"
+                             "B";
+    }
+}
+
+@media (max-width: 700px) {
+    .contacts {
+        grid-template-areas: "A A A"
+                             "B B B"
+                             "C C C";
+    }
+    .address {
+        text-align: center;
+    }
+    .phone-number {
+        text-align: center;
+    }
+    .technology-item {
+        grid-template-areas: "A"
+                             "B";
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .technology-item:nth-child(2) .technology-grid-b {
+        grid-area: B;
+    }
+    .technology-item:nth-child(2) .technology-grid-a {
+        grid-area: A;
+    }
+    .technology-card-description {
+        margin: auto 0 0 0;
+    }
+    .licenses-items {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 350px) {
+    .company-description-image {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+}

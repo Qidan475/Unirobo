@@ -1,0 +1,288 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "HarmoniaSans";
+    src: url("../fonts/harmoniasans/HarmoniaSansProCyr-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/roboto/Roboto-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    color: black;
+}
+
+body {
+    background-color: #fef7f6;
+}
+
+.site-content {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.title {
+    font-size: 32pt;
+    color: #333333;
+    text-align: center;
+}
+
+.white-colored-section {
+    background-color: #FFF;
+}
+
+.section-margin {
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 75px;
+}
+
+.white-block {
+    background: #FFFFFF;
+    box-shadow: 5px 6px #ddd;
+}
+
+.light-shadow {
+    box-shadow: 0 0 10px 5px #ddd;
+}
+
+.without-decor {
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+.no-dots {
+    list-style-type: none;
+}
+
+.slider-selected {
+    background-color: wheat !important;
+}
+
+@media (max-width: 2560px) {
+    .section-margin {
+        border-radius: 2vw;
+    }
+}
+
+/* Шапкус */
+
+header {
+    background: #343434;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    background: url("../images/robot-logo.png") no-repeat;
+    background-size: 50px;
+    height: 100%;
+}
+
+.shapka-grid {
+    display: grid;
+    grid-template-areas: "A B C D E F";
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 2fr;
+}
+
+.menu-item-2, .menu-item-3, .menu-item-4, .menu-item-5 {
+    text-align: center;
+}
+
+.shapka-grid > div {
+    height: 50px;
+}
+
+.center-me-daddy {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.unirobo {
+    padding-top: 8px;
+}
+
+.shapka-grid a {
+    text-decoration: none;
+    color: #F7FFF7;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.shapka-grid a:hover {
+    color: #999;
+    transition: 0.1s;
+}
+
+.site-title {
+    color: #FFE66D !important;
+    font-size: 20pt;
+    padding: 10px 10px 10px 50px;
+}
+
+.dropdown {
+    display: none;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 1px 1px #ddd;
+}
+
+.dropdown-content div {
+    background-color: #aaaaaa;
+    text-align: center;
+    padding: 5px;
+    border-top: 1px #aaa solid;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    #special-menu {
+        grid-area: B;
+    }
+    .dropdown {
+        display: block;
+    }
+    .shapka-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-item-2, .menu-item-3, .menu-item-4, .menu-item-5 {
+        display: none;
+    }
+}
+
+/* Конец шапкуса */
+
+
+
+/* Подвалус */
+
+footer {
+    height: 150px;
+    font-size: larger;
+    background: url("../images/cat-roomba.gif") no-repeat center;
+    background-size: cover;
+    padding-top: 25px;
+}
+
+.centered-footer {
+    text-align: center;
+}
+
+.footer-title {
+    color: white;
+    padding-top: 10px;
+}
+
+.footer-content {
+    display: inline-flex;
+    padding-top: 20px;
+}
+
+
+.footer-img-container {
+    margin-right: 20px;
+    height: 50px;
+    width: 50px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footer-item-3 {
+    width: 75px;
+}
+
+.footer-extremism {
+    color: #555;
+    font-size: 8pt;
+}
+/* Конец подвалуса */
+
+
+
+
+/* Кнопка наверх */
+
+#go-up-button {
+    position: fixed;
+    bottom: 3vh;
+    right: 1vw;
+    z-index: 99999;
+
+    display: none;
+}
+
+.go-up-button-funnies {
+    padding: 10px 20px;
+    background-color: navajowhite;
+    border-radius: 10px;
+    font-size: 20pt;
+}
+
+.go-up-button-show {
+    display: block !important;
+}
+
+@media (max-width: 1500px) {
+    #go-up-button {
+        display: none !important;
+    }
+}
+
+#cookies-popup {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    padding: 25px;
+
+    display: none;
+}
+
+#cookies-popup div {
+    color: white;
+}
+
+.cookies-popup-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cookies-popup-content .more {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+.cookies-popup-content .smol {
+    font-size: 8pt;
+}
+
+#accept-btn {
+    padding: 15px 30px;
+    background: mediumspringgreen;
+    margin-left: 25px;
+}
+
+/* ъ */

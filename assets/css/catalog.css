@@ -1,0 +1,132 @@
+.content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 25px;
+}
+
+.item-card {
+    height: 350px;
+    max-height: 100%;
+    background-color: white;
+    padding-top: 75px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.image-container {
+    padding-top: 15px;
+    height: 120px;
+    width: 100%;
+    background: no-repeat center;
+    background-size: 120px;
+}
+
+.item-title {
+    padding-top: 15px;
+    font-size: 16pt;
+}
+
+.item-price {
+    padding-top: 10px;
+}
+
+.item-buy-button {
+    padding-top: 30px;
+}
+
+.item-buy-button a {
+    padding: 13px 25px;
+    background-color: orange;
+    transition: 0.25s;
+}
+
+.item-buy-button a:hover {
+    background-color: gold;
+}
+
+.item-card:hover {
+    box-shadow: 0 0 10px 5px #aaa;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 375px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+#addedToCart-popup {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    padding: 10px 20px;
+    background: lightseagreen;
+    font-size: 10pt;
+
+    display: none;
+}
+
+#addedToCart-popup div {
+    color: white;
+}
+
+
+/* Картинкусы */
+
+.card-img-1 {
+    background-image: url("../images/robots/5c960b97ba755a5e9257d5637e066f1682fc031357f0905c39a25dd0b25b2ca4.jpg.webp");
+}
+
+.card-img-2 {
+    background-image: url("../images/robots/9aa51a16d390981f6facd6694ea7a5f04d82b87ed7c1b3dab56d82dbe6ef570f.jpg.webp");
+}
+
+.card-img-3 {
+    background-image: url("../images/robots/30afa0d1b4b82829da85435f9b71b242e8aec6e8e58e9370b1744a01742fcedd.jpg.webp");
+}
+
+.card-img-4 {
+    background-image: url("../images/robots/12983b713f50a080f3920f302409ee6dfd8b12c30e158a3737eb6ce77d475f77.jpg.webp");
+}
+
+.card-img-5 {
+    background-image: url("../images/robots/79323ce9842ae764dbf1de212d438339c6da86ef5319fb17a83b4d1494d2f2a9.jpg.webp");
+}
+
+.card-img-6 {
+    background-image: url("../images/robots/673667a49e01c92f38e423d977e62578193971db1d52c4ede56ad02bbd4eda27.jpg.webp");
+}
+
+.card-img-7 {
+    background-image: url("../images/robots/a8e3f0bb29d3f05c377880732293aace9c23e0dd9c9c595619af31f77bdb0bd3.jpg.webp");
+}
+
+.card-img-8 {
+    background-image: url("../images/robots/a35df589fd829cf63d7285e6b3e3ffe4b12245606f078bc41092ff1550d341d7.jpg.webp");
+}
+
+.card-img-9 {
+    background-image: url("../images/robots/ab70ed573f647e1657d231b2204164607e7a9f417823bc691f78e63667db280e.jpg.webp");
+}
+
+.card-img-10 {
+    background-image: url("../images/robots/c0e8cf098350a90c926d3e4f45660371a609a25d45e7db2bdf581ba8fffbb6ee.jpg.webp");
+}
+
+.card-img-11 {
+    background-image: url("../images/robots/c1f902a9fac918bebe65052e4b8bb0d668365a79ab3473f5c09f0ef7a2f8a3a1.jpg.webp");
+}
+
+.card-img-12 {
+    background-image: url("../images/robots/db964761c3d608ed0bf001b59f18d6a59a33daa96f8ca14375210cb9dc319466.jpg.webp");
+}
+
